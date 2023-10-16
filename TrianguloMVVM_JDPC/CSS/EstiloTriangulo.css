@@ -1,0 +1,31 @@
+﻿label {
+    color: tomato;
+    font-size: 20;
+    font-style: bold;
+}
+
+^contentPage {
+    background-color: gray;
+    padding: 20,0;
+}
+
+frame.titulo {
+    background-color: aliceblue;
+    border-radius: 2,2;
+}
+
+entry {
+    background-color: burlywood;
+    font-size: 20;
+    font-style: bold;
+}
+
+#encabezado {
+    color: black;
+    font-size: 30;
+    font-style: bold;
+}
+
+button.imc {
+    background-color: tomato;
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrianguloMVVM_JDPC.Vistas.VTriangulo">
+    
+        <ContentPage.Resources>
+            <StyleSheet Source="/CSS/EstiloTriangulo.css">
+
+
+            </StyleSheet>
+        </ContentPage.Resources>
+        <StackLayout>
+            <Frame  Padding="24"  StyleClass="frame.titulo">
+                <Label Text="Tipo de triangulos!" HorizontalTextAlignment="Center"  FontSize="36"/>
+            </Frame>
+            <Label Text="Tipo de triangulos"  Padding="30,10,30,10"  StyleId="encabezado"/>
+            <Label FontSize="16" Padding="30,24,30,0">
+            </Label>
+            <Label Text="Base"/>
+        <Entry Placeholder="Base" Keyboard="Numeric" Text="{Binding Base}"/>
+            <Label Text="Altura"/>
+        <Entry Placeholder="Altura" Keyboard="Numeric" Text="{Binding Altura}"/>
+            <Label Text="Lado Uno"/>
+        <Entry Placeholder="Lado uno" Keyboard="Numeric" Text="{Binding Lado1}"/>
+            <Label Text="Lado dos"/>
+        <Entry Placeholder="Lado dos" Keyboard="Numeric" Text="{Binding Lado2}"/>
+        <Entry Placeholder="Area" IsEnabled="False" Text="{Binding Area}" />
+
+        <Button StyleClass="imc" Text="Calcular Area" Command="{Binding CalcularAreaCommand}"/>
+
+            <Image Source="TriangleEquilateral" HeightRequest="180" WidthRequest="180" x:Name="imgEquilatero" IsVisible="false"/>
+            <Image Source="TriangleIsosceles" HeightRequest="180" WidthRequest="180" x:Name="imgIsoceles" IsVisible="false"/>
+            <Image Source="Trianguloescaleno" HeightRequest="180" WidthRequest="180" x:Name="imgEscaleno" IsVisible="false"/>
+        </StackLayout>
+</ContentPage>
